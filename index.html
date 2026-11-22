@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rooted Botanica — Carnivorous Plants South Africa</title>
+  <meta name="description" content="Rooted Botanica grows and sells Venus flytraps, Sarracenia pitcher plants, Nepenthes and sundews in South Africa — plus printable plant care cards.">
+  <meta property="og:title" content="Rooted Botanica — Carnivorous Plants">
+  <meta property="og:description" content="Venus flytraps, pitcher plants and sundews, grown with love in South Africa.">
+  <meta property="og:image" content="assets/img/nepenthes-noid-pitcher.jpg">
+  <meta name="theme-color" content="#1f3d2b">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><path d='M32 58c0-14 0-26 0-34' stroke='%231f3d2b' stroke-width='4' fill='none'/><path d='M32 26C18 26 10 16 10 6c12 0 22 8 22 20zM32 30c12 0 20-9 20-18-10 0-20 7-20 18z' fill='%235e8c3a'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#/" aria-label="Rooted Botanica home">
+        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 60V24" stroke="currentColor" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M32 28C17 28 9 17 9 6c13 0 23 9 23 22z" fill="var(--leaf)"/><path d="M32 34c12 0 21-9 21-20-11 0-21 8-21 20z" fill="var(--leaf-2)"/></svg>
+        <span>Rooted<br><em>Botanica</em></span>
+      </a>
+      <nav class="main-nav" aria-label="Main">
+        <a href="#/shop" data-nav="shop">Shop</a>
+        <a href="#/care-cards" data-nav="care-cards">Care cards</a>
+        <a href="#/care" data-nav="care">Plant care</a>
+        <a href="#/about" data-nav="about">About</a>
+      </nav>
+      <a class="cart-btn" href="#/cart" aria-label="Cart">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7h12l-1.2 11.2a2 2 0 0 1-2 1.8H9.2a2 2 0 0 1-2-1.8L6 7z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 7a3 3 0 0 1 6 0" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        <span class="cart-count" id="cart-count" aria-live="polite">0</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1"></main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="footer-brand">Rooted Botanica</p>
+        <p>Carnivorous plants grown with love by a young South African plant-keeper.</p>
+      </div>
+      <div>
+        <p class="footer-h">Shop</p>
+        <a href="#/shop">All plants</a>
+        <a href="#/shop?new=1">New arrivals</a>
+        <a href="#/care-cards">Care cards</a>
+      </div>
+      <div>
+        <p class="footer-h">Help</p>
+        <a href="#/care">Plant care</a>
+        <a href="#/delivery">Delivery &amp; returns</a>
+        <a href="#/privacy">Privacy</a>
+      </div>
+      <div>
+        <p class="footer-h">Follow along</p>
+        <div class="socials" id="socials"></div>
+      </div>
+    </div>
+    <p class="wrap fineprint">© <span id="year"></span> Rooted Botanica · Prices in South African Rand (ZAR)</p>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

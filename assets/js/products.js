@@ -1,0 +1,207 @@
+/* =========================================================
+   ROOTED BOTANICA — PLANT INVENTORY
+   Stock numbers copied from "Carnivourous plant inventory.xlsx".
+
+   HOW TO UPDATE:
+   - Sold a plant?  Lower its "stock" number.
+   - New plant?     Copy a whole { ... } block and change it.
+   - Mark as new?   Set  isNew: true  (shows in "New arrivals").
+   - Photo?         Put the photo in assets/img/ and set image: "assets/img/your-photo.jpg"
+                    (image: null shows a drawn picture instead).
+
+   !! PRICES ARE PLACEHOLDERS — Mila must set her own prices before launch. !!
+   ========================================================= */
+window.PRODUCTS = [
+  {
+    id: "venus-flytrap",
+    code: "VFT",
+    name: "Venus Flytrap",
+    latin: "Dionaea muscipula",
+    category: "Venus flytraps",
+    tags: ["venus flytrap", "flytrap", "beginner friendly", "snap trap", "sun"],
+    difficulty: "Easy",
+    isNew: false,
+    image: null,
+    illustration: "flytrap",
+    gallery: [],
+    blurb: "The famous snap-trap plant. Its leaves close in a blink when a bug touches the trigger hairs.",
+    care: {
+      light: "Full sun — at least 4 hours of direct sun a day",
+      water: "Rainwater or distilled water only. Stand the pot in a tray of water.",
+      soil: "Peat moss and perlite. Never use potting soil or fertiliser.",
+      winter: "Needs a cool winter rest (dormancy). It slows down — that's normal!",
+    },
+    sizes: [
+      { size: "Small", price: 80, stock: 24 },
+      { size: "Medium", price: 120, stock: 13 },
+      { size: "Large", price: 180, stock: 2 },
+    ],
+    careCard: "card-flytrap",
+  },
+  {
+    id: "sarracenia-scarlet-belle",
+    code: "SSB",
+    name: "Sarracenia 'Scarlet Belle'",
+    latin: "Sarracenia psittacina × leucophylla",
+    category: "Sarracenia",
+    tags: ["sarracenia", "pitcher plant", "american pitcher", "trumpet pitcher", "beginner friendly", "sun"],
+    difficulty: "Easy",
+    isNew: true,
+    image: "assets/img/sarracenia-1.jpg",
+    illustration: "sarracenia",
+    gallery: [],
+    blurb: "A compact trumpet pitcher with red-veined hoods that glow when the sun shines through them.",
+    care: {
+      light: "Full sun, outdoors is best",
+      water: "Rainwater or distilled water. Keep the pot standing in water in summer.",
+      soil: "Peat moss and perlite. No fertiliser.",
+      winter: "Needs a cold winter rest. Old pitchers go brown — just trim them.",
+    },
+    sizes: [
+      { size: "Small", price: 150, stock: 5 },
+      { size: "Medium", price: 220, stock: 32 },
+      { size: "Large", price: 320, stock: 9 },
+    ],
+    careCard: "card-sarracenia",
+  },
+  {
+    id: "sarracenia-maroon-lady",
+    code: "SML",
+    name: "Sarracenia 'Maroon Lady'",
+    latin: "Sarracenia hybrid",
+    category: "Sarracenia",
+    tags: ["sarracenia", "pitcher plant", "american pitcher", "trumpet pitcher", "beginner friendly", "sun"],
+    difficulty: "Easy",
+    isNew: true,
+    image: "assets/img/sarracenia-2.jpg",
+    illustration: "sarracenia",
+    gallery: [],
+    blurb: "Tall trumpets that blush deep maroon in strong sun. A real show-off on a sunny windowsill or patio.",
+    care: {
+      light: "Full sun, outdoors is best",
+      water: "Rainwater or distilled water. Keep the pot standing in water in summer.",
+      soil: "Peat moss and perlite. No fertiliser.",
+      winter: "Needs a cold winter rest. Old pitchers go brown — just trim them.",
+    },
+    sizes: [
+      { size: "Small", price: 150, stock: 4 },
+      { size: "Medium", price: 220, stock: 8 },
+      { size: "Large", price: 320, stock: 9 },
+    ],
+    careCard: "card-sarracenia",
+  },
+  {
+    id: "sarracenia-fiona",
+    code: "SF",
+    name: "Sarracenia 'Fiona'",
+    latin: "Sarracenia hybrid",
+    category: "Sarracenia",
+    tags: ["sarracenia", "pitcher plant", "american pitcher", "trumpet pitcher", "rare"],
+    difficulty: "Easy",
+    isNew: false,
+    image: null,
+    illustration: "sarracenia",
+    gallery: [],
+    blurb: "A lovely named hybrid — only a couple available, so grab one while you can.",
+    care: {
+      light: "Full sun, outdoors is best",
+      water: "Rainwater or distilled water. Keep the pot standing in water in summer.",
+      soil: "Peat moss and perlite. No fertiliser.",
+      winter: "Needs a cold winter rest. Old pitchers go brown — just trim them.",
+    },
+    sizes: [
+      { size: "Small", price: 150, stock: 0 },
+      { size: "Medium", price: 220, stock: 2 },
+      { size: "Large", price: 320, stock: 0 },
+    ],
+    careCard: "card-sarracenia",
+  },
+  {
+    id: "american-pitcher-noid",
+    code: "NAP",
+    name: "American Pitcher Plant (unnamed)",
+    latin: "Sarracenia sp. — NOID",
+    category: "Sarracenia",
+    tags: ["sarracenia", "pitcher plant", "american pitcher", "noid", "sun"],
+    difficulty: "Easy",
+    isNew: false,
+    image: "assets/img/sarracenia-3.jpg",
+    illustration: "sarracenia",
+    gallery: [],
+    blurb: "A tough, easy pitcher plant without a name tag (NOID = no ID). Same great bug-catching, friendlier price.",
+    care: {
+      light: "Full sun, outdoors is best",
+      water: "Rainwater or distilled water. Keep the pot standing in water in summer.",
+      soil: "Peat moss and perlite. No fertiliser.",
+      winter: "Needs a cold winter rest. Old pitchers go brown — just trim them.",
+    },
+    sizes: [
+      { size: "Small", price: 120, stock: 0 },
+      { size: "Medium", price: 180, stock: 2 },
+      { size: "Large", price: 260, stock: 0 },
+    ],
+    careCard: "card-sarracenia",
+  },
+  {
+    id: "nepenthes-noid",
+    code: "NN",
+    name: "Tropical Pitcher Plant (unnamed)",
+    latin: "Nepenthes sp. — NOID",
+    category: "Nepenthes",
+    tags: ["nepenthes", "pitcher plant", "tropical pitcher", "monkey cup", "indoor", "noid"],
+    difficulty: "Medium",
+    isNew: false,
+    image: "assets/img/nepenthes-noid-1.jpg",
+    illustration: "nepenthes",
+    gallery: ["assets/img/nepenthes-noid-pitcher.jpg"],
+    blurb: "Hanging 'monkey cup' pitchers on long tendrils. A great indoor plant for a bright spot.",
+    care: {
+      light: "Bright light, but not harsh afternoon sun",
+      water: "Rainwater or distilled water. Keep moist — don't let it stand in water.",
+      soil: "Airy mix of orchid bark, coco chips and perlite.",
+      winter: "No rest needed. Keep it warm and away from frost.",
+    },
+    sizes: [
+      { size: "Small", price: 220, stock: 0 },
+      { size: "Medium", price: 300, stock: 0 },
+      { size: "Large", price: 380, stock: 6 },
+    ],
+    careCard: "card-nepenthes",
+  },
+  {
+    id: "fork-sundew",
+    code: "FS",
+    name: "Fork-Leaf Sundew",
+    latin: "Drosera binata",
+    category: "Sundews",
+    tags: ["sundew", "drosera", "beginner friendly", "sticky", "sun"],
+    difficulty: "Easy",
+    isNew: false,
+    image: null,
+    illustration: "sundew",
+    gallery: [],
+    blurb: "Forked leaves covered in sparkly, sticky dew drops that catch gnats and fruit flies.",
+    care: {
+      light: "Bright light to full sun",
+      water: "Rainwater or distilled water. Stand the pot in a tray of water.",
+      soil: "Peat moss and perlite. No fertiliser.",
+      winter: "May die back in cold weather and regrow in spring.",
+    },
+    sizes: [
+      { size: "Small", price: 70, stock: 15 },
+      { size: "Medium", price: 110, stock: 23 },
+      { size: "Large", price: 160, stock: 10 },
+      { size: "XL", price: 220, stock: 1 },
+    ],
+    careCard: "card-sundew",
+  },
+];
+
+/* Printed care cards — sold on their own, and (see config.js) with plants. */
+window.CARE_CARDS = [
+  { id: "card-flytrap", name: "Venus Flytrap care card", for: "Venus flytraps", price: 20, stock: 50, illustration: "flytrap" },
+  { id: "card-sarracenia", name: "Sarracenia care card", for: "American pitcher plants", price: 20, stock: 50, illustration: "sarracenia" },
+  { id: "card-nepenthes", name: "Nepenthes care card", for: "Tropical pitcher plants", price: 20, stock: 50, illustration: "nepenthes" },
+  { id: "card-sundew", name: "Sundew care card", for: "Sundews", price: 20, stock: 50, illustration: "sundew" },
+  { id: "card-set", name: "Full set — all 4 care cards", for: "Every plant in the shop", price: 60, stock: 20, illustration: "set" },
+];
